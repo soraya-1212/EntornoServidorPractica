@@ -1,0 +1,107 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: linear-gradient(135deg, #061a40, #0b4f9c, #168aad);
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: #ffffff;
+    color: #222222;
+    width: 450px;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.card h2 {
+    text-align: center;
+    color: #7b2cbf;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group > label:first-child {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.form-group label:not(:first-child) {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #7b2cbf;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #5a189a;
+}
+/* RESET */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* BODY */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1b1026;
+    color: #222;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+/* TARJETA PRINCIPAL */
+
+.profile-card {
+    width: 450px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    border: 3px solid #7b2cbf;
+}

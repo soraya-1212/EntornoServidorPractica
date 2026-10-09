@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 30px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: linear-gradient(135deg, #061a40, #0b4f9c, #168aad);
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: #ffffff;
+    width: 360px;
+    max-height: 600px; /* Limita altura total para evitar exceso */
+    overflow-y: auto; /* Scroll si excede altura */
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    padding: 20px 25px;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-sizing: border-box;
+}
+
+/* Encabezado */
+.titulo {
+    text-align: center;
+    border-bottom: 2px solid #5a1a8a;
+    padding-bottom: 12px;
+}
+
+.titulo h2 {
+    margin: 0 0 10px;
+    color: #5a1a8a;
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.titulo img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+/* Contenido de datos */
+.datos, .dias {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.dato p:first-child {
+    font-weight: 600;
+    color: #5a1a8a;
+    margin: 0 0 3px;
+    font-size: 0.95rem;
+}
+
+.dato p:last-child {
+    margin: 0;
+    font-size: 0.9rem;
+    word-wrap: break-word;
+}
+
+/* Lista días */
+.dias ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.dias ul li {
+    background-color: #d9b2ff;
+    padding: 5px 10px;
+    border-radius: 12px;
+    color: #4a007f;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+/* Total a pagar */
+.total {
+    border-top: 2px solid #5a1a8a;
+    padding-top: 12px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.total p {
+    margin: 5px 0;
+}
+
+.total p strong {
+    color: #5a1a8a;
+    font-size: 1.2rem;
+}
+
+/* Scroll personalizado para la tarjeta si es necesario */
+.card.profile-card::-webkit-scrollbar {
+    width: 6px;
+}
+
+.card.profile-card::-webkit-scrollbar-thumb {
+    background-color: #9170c2;
+    border-radius: 3px;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 400px) {
+    .card.profile-card {
+        width: 90%;
+        max-height: 550px;
+        padding: 15px 20px;
+    }
+
+    .titulo img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .titulo h2 {
+        font-size: 1.4rem;
+    }
+}
